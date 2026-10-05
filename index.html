@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Đăng ký tài khoản — GreenTrail</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<script src="script.js" defer></script>
+</head>
+<body class="bg-light">
+<main class="container py-4 py-lg-5">
+<header class="text-center mb-4"><a href="#registration" class="h4 fw-bold text-success text-decoration-none">GreenTrail.</a><p class="text-muted small mt-2 mb-0">Khám phá · Kết nối · Trải nghiệm</p></header>
+<div class="row g-4 align-items-center">
+<section class="col-lg-6" aria-labelledby="benefits-title"><h1 id="benefits-title" class="h2 fw-bold mb-3">Một tài khoản, nhiều trải nghiệm</h1><p class="text-muted mb-4">Tìm cảm hứng cho hành trình của bạn và kết nối với những điều mình yêu thích.</p>
+<div id="benefitsCarousel" class="carousel slide rounded-4 overflow-hidden shadow-sm" data-bs-ride="carousel" data-bs-interval="6000" aria-label="Lợi ích dịch vụ">
+<div class="carousel-indicators"><button type="button" data-bs-target="#benefitsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Lợi ích 1"></button><button type="button" data-bs-target="#benefitsCarousel" data-bs-slide-to="1" aria-label="Lợi ích 2"></button><button type="button" data-bs-target="#benefitsCarousel" data-bs-slide-to="2" aria-label="Lợi ích 3"></button></div>
+<div class="carousel-inner">
+<div class="carousel-item active"><img src="images/explore.svg" class="d-block w-100 img-fluid" width="1200" height="800" alt="Đường mòn đi qua những dãy núi xanh"><div class="bg-success text-white text-center px-5 pt-4 pb-5"><h2 class="h4">Khám phá điều mới</h2><p class="mb-0">Tìm ý tưởng cho những chuyến đi và trải nghiệm ngoài trời.</p></div></div>
+<div class="carousel-item"><img src="images/connect.svg" class="d-block w-100 img-fluid" width="1200" height="800" alt="Lều cắm trại giữa rừng cây và núi"><div class="bg-success text-white text-center px-5 pt-4 pb-5"><h2 class="h4">Kết nối cùng sở thích</h2><p class="mb-0">Chia sẻ cảm hứng và khoảnh khắc với cộng đồng.</p></div></div>
+<div class="carousel-item"><img src="images/relax.svg" class="d-block w-100 img-fluid" width="1200" height="800" alt="Hồ nước xanh dưới ánh mặt trời bên núi"><div class="bg-success text-white text-center px-5 pt-4 pb-5"><h2 class="h4">Lưu cảm hứng của bạn</h2><p class="mb-0">Gom những ý tưởng yêu thích cho hành trình tiếp theo.</p></div></div>
+</div>
+<button class="carousel-control-prev" type="button" data-bs-target="#benefitsCarousel" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Lợi ích trước</span></button><button class="carousel-control-next" type="button" data-bs-target="#benefitsCarousel" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Lợi ích tiếp theo</span></button>
+</div></section>
+<section class="col-lg-6" id="registration" aria-labelledby="form-title"><div class="card border-0 shadow-sm rounded-4"><div class="card-body p-4 p-md-5"><h2 id="form-title" class="h3 fw-bold">Đăng ký tài khoản</h2><p class="text-muted mb-4">Điền thông tin để bắt đầu.</p>
+<form id="registration-form">
+<div class="mb-3"><label for="fullname" class="form-label fw-semibold">Họ và tên</label><div class="input-group"><span class="input-group-text" aria-hidden="true">☺</span><input type="text" class="form-control" id="fullname" name="fullname" placeholder="Nhập họ và tên" autocomplete="name" required></div></div>
+<div class="mb-3"><label for="email" class="form-label fw-semibold">Email</label><div class="input-group"><span class="input-group-text" aria-hidden="true">@</span><input type="email" class="form-control" id="email" name="email" placeholder="ban@example.com" autocomplete="email" required></div></div>
+<div class="mb-3"><label for="password" class="form-label fw-semibold">Mật khẩu</label><div class="input-group"><span class="input-group-text" aria-hidden="true">✱</span><input type="password" class="form-control" id="password" name="password" minlength="8" autocomplete="new-password" aria-describedby="password-help" required></div><div id="password-help" class="form-text">Sử dụng ít nhất 8 ký tự.</div></div>
+<div class="mb-4"><label for="confirmation" class="form-label fw-semibold">Xác nhận mật khẩu</label><div class="input-group"><span class="input-group-text" aria-hidden="true">✱</span><input type="password" class="form-control" id="confirmation" name="confirm_password" minlength="8" autocomplete="new-password" required></div></div>
+<button type="submit" class="btn btn-primary btn-lg w-100">Đăng ký</button><p class="form-text text-center mt-3 mb-0">Form thực hành chưa kết nối máy chủ, không tạo tài khoản thật.</p><div id="form-result" class="alert alert-success mt-3 mb-0" role="status" hidden>Thông tin hợp lệ! Bạn đã hoàn thành form đăng ký minh họa. Dữ liệu chưa được gửi hoặc lưu.</div>
+</form></div></div></section>
+</div><footer class="text-center text-muted small mt-4">© 2026 GreenTrail · Bài thực hành Bootstrap Forms &amp; Carousel</footer>
+</main><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body></html>
